@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Min nettside</h1>
+
+        <!-- LOGIN AND REGISTER -->
+        <div id="authSection">
+
+            <h2>Logg inn / Registrer</h2>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="E-post"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Passord"
+            >
+
+            <button id="registrerBtn">Registrer</button>
+
+            <button id="loginBtn">Logg inn</button>
+
+        </div>
+
+        <!-- LOGGED IN SECTION -->
+        <div id="databaseSection" hidden>
+
+            <h2>Velkommen!</h2>
+
+            <p id="brukerEmail"></p>
+
+            <button id="logoutBtn">Logg ut</button>
+
+            <hr>
+
+            <h2>Skriv noe til databasen</h2>
+
+            <textarea
+                id="tekst"
+                placeholder="Skriv noe her..."
+            ></textarea>
+
+            <button id="lagreBtn">Lagre i databasen</button>
+
+            <h2>Mine lagrede tekster</h2>
+
+            <ul id="liste"></ul>
+
+        </div>
+
+        <p id="status">Klar.</p>
+
+    </div>
+
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
